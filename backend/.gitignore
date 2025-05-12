@@ -2,6 +2,8 @@
 **/.DS_Store
 
 
+app.html
+
 .env
 node_modules
 package-lock.json

@@ -1,16 +1,16 @@
 const { Router } = require('express')
-const { loginUsuarios } = require('../controllers/login.controller');
+const { loginUsuario, validarToken } = require('../controllers/login.controller');
 const { validarJWT } = require('../helpers/jwt.helper');
-
+const { enviarUsuario } = require('../controllers/clientes.controller');
 
 
 const route = Router();
 
+route.post('/', loginUsuario);
+route.post('/validar', validarToken, validarJWT);
+route.get('/cliente',loginUsuario );
+route.get('/clientes',enviarUsuario );
 
-route.get('/usuario', loginUsuarios)
-route.get('/cliente', loginUsuarios);
 
 
-
-
-module.exports = route
+module.exports = route;
