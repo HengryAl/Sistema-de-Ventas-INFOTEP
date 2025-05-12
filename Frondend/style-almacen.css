@@ -1,0 +1,153 @@
+/* General */
+:root{
+    --color-primario: #e90077;
+    --color-secundario: #dddddd;
+    --color-terciario: #e2e2e2;
+    --color-cuaternario: #c9c9c9;
+    --color-quintario: #d5d5d5;
+    --color-sextario: #b0b0b0;
+    --color-septimo: #a0a0a0;
+    --color-acento: #606060;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.factura-card {
+  width: 360px;
+  background-color: #e3e3e3;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.seccion-scroll{
+    display: flex;
+    align-items: start;
+    justify-self: start;
+}
+.main{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+/* Encabezado */
+.factura-header p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.factura-id {
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cliente-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Productos */
+.factura-productos {
+  margin-top: 20px;
+  background: #d1d1d1;
+  padding: 10px;
+  border-radius: 6px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.factura-productos-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+  text-transform: uppercase;
+}
+
+/* Producto individual */
+.producto-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.producto-item:last-child {
+  border-bottom: none;
+}
+
+.producto-detalle {
+  width: 65%;
+}
+
+.producto-detalle .nombre {
+  font-weight: bold;
+  margin: 0;
+}
+
+.producto-detalle .descripcion {
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+}
+
+.producto-cantidad {
+  text-align: right;
+}
+
+.producto-cantidad span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.producto-cantidad input[type="checkbox"],
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+/* Casilla con check (simulado) */
+.checkbox.checked {
+  background-color: #fff;
+  position: relative;
+}
+
+
+
+/* Botón final */
+.factura-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-despachado {
+  background-color: #f471b5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: not-allowed;
+  opacity: 0.6;
+}

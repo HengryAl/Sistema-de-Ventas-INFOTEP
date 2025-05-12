@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="/login-register.css">
+</head>
+<body>
+    <main>
+        <div class="form-contenedor-2">
+            <h1 class="correo">Crea tu cuenta </h1>
+          
+            <form id="register-form">
+                <label for="input-id" class="sr-only">user</label>
+                <input type="text" name="id" id="input-id" placeholder="iD" required>
+
+                <label for="input-nombre" class="sr-only">user</label>
+                <input type="text" name="user" id="input-nombre" placeholder="nombre" required>
+
+                <label for="input-apellido" class="sr-only">user</label>
+                <input type="text" name="apellido" id="input-apellido" placeholder="apellido" required>
+
+                <label for="input-nombreusuario" class="sr-only">user</label>
+                <input type="text" name="nombreusuario" id="input-nombreusuario" placeholder="nombreUsuario" required>
+
+                <label for="input-correo" class="sr-only">user</label>
+                <input type="text" name="correo" id="input-correo" placeholder="correo electronico" required>
+
+                <label for="input-contrasena" class="sr-only">email</label>
+                <input type="text" name="password" id="input-contrasena" placeholder="contraseña" required>
+
+                <label for="rol" class="sr-only">password</label>
+                <input type="text" name="rol" id="input-rol" placeholder="rol" required>
+            
+                <button type="submit">registro</button>
+
+                <p class="error escondido">error al registrate</p>  
+            </form>
+            <p>ya esta registrado? <a href="/login.html">iniciar sesion</a></p>
+                
+        </div>
+    </main> 
+<script src="/register.js"></script>
+</body>
+</html>

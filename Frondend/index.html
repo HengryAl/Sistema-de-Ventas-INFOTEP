@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-carrito.css">
+    <title>Kairós-Area de ventas</title>
+</head>
+
+
+<body>
+
+    <aside class="asside"> 
+
+        <div class="content-logo"> 
+            <div class="div-logo"></div>
+        </div>
+
+        <div class="content-seccion">
+
+            <div class="sub-seccion-ventas">
+                <p class="title-p">Ventas</p>
+            </div>
+
+            <div class="sub-seccion-cotizacion">
+                <p class="title-p">Cotizacion</p>
+            </div>
+
+            <div class="sub-seccion-cliente">
+                <p class="title-p">Clientes</p>
+            </div>
+            <div class="sub-seccion-cliente">
+                <p class="title-p" id="almacen">Almacen</p>
+            </div>
+
+        </div>
+
+
+        <div class="content-vacio"></div>
+
+
+    </aside>
+
+    <div class="content-fondo">
+        <header class="header">
+
+            <div class="content-padre-header">
+
+                <div class="content-title-ventas">
+                    <h3 class="title-ventas">Ventas</h3>
+                </div>
+
+                <div class="content-nombreusuario-imgusuario">
+
+                    <div class="content-title-usuario">
+                        <p class="nombre-usuario">Carlos12</p>
+                    </div>
+
+                    <div class="content-img-usuario">
+                        <img src="" alt="">
+                    </div>
+
+                </div>
+           
+            
+            </div>
+
+            <div class="content-nav-header">
+            
+                <!-- <div class="content-input">
+                    <input type="text" class="input-buscar" id="input-value"  placeholder="Buscar productos">
+                </div>
+
+                <div class="content-boton-buscar">
+                    <button class="btn" id="boton-buscar">Buscar</button>
+                </div> -->
+            <div class="content-input">
+                <input type="text" class="input-buscar" id="input-value" placeholder="Escribe el nombre del producto">
+            </div>
+
+            <div class="content-boton-buscar">
+                <button class="btn" id="botton-cambia-modo">Buscar por Código</button>
+            </div>
+                <div class="content-boton-categorias" id="content-categorias">
+                    <h5 class="title-categoria">Categorias</h5>
+                    <!-- menu desplegable de las categorias -->
+
+                     <div class="menu-categorias" id="menu-de-categorias">
+                        <p class="categoria-item">Todos los produtos</p>
+                        <p class="categoria-item">Herramientas Eléctricas</p>
+                        <p class="categoria-item">Herramientas de Jardín</p>
+                        <p class="categoria-item">Repuestos Mecánicos</p>
+                        <p class="categoria-item">Automotriz</p>
+                        <p class="categoria-item">Herramientas Manuales</p>
+                        <p class="categoria-item">Plomería</p>
+                        <p class="categoria-item">Electricidad</p>
+                        <p class="categoria-item">Pinturas</p>
+                        <p class="categoria-item">Fijaciones</p>
+                        <p class="categoria-item">Limpieza</p>
+                        <p class="categoria-item">Materiales de Construcción</p>
+                        <p class="categoria-item">Hogar y Jardín</p>
+                        <p class="categoria-item">Herramientas de Medición</p>
+                        <p class="categoria-item">Electrónica</p>
+                        <p class="categoria-item">Almacenamiento</p>
+                     </div>
+
+                </div>
+
+                <div class="content-boton-carrito">
+                    <button class="btn-carrito" id="boton-carrito" data-after="0"  >Resumen</button>
+                </div>
+
+            </div>
+
+        </header>
+
+        <main class="main" id="main">
+
+            <section class="seccion-scroll" id="seccion-para-tarjeta">
+
+                <!-- <div class="contenido-tarjeta" id="content-tarjeta">
+
+                    <div class="content-codigo">
+                        <div class="content-p">
+                            <p class="codigo">CODIGO</p>
+                            <h5 class="codigo-oo">#P004</h5>
+                        </div>
+                    </div>
+
+                    <div class="content-img">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="content-nombre-producto-precio">
+
+                        <div class="content-tag-nombre-producto">
+                            <p class="nombre-producto">Tester De Medir Voltaje</p>
+                            <p class="precio-producto">$600.00 DOP</p>
+                        </div>
+
+                        <div class="content-botones">
+                            <span>Cantidad</span>
+                            <input type="number" class="btn-numero" id="boton-cantidad">
+                            <button class="btn-agregar" id="boton-agregar">Agregar</button>
+                        </div>
+
+                    </div>
+
+                </div> -->
+
+
+            </section>
+        </main>
+    </div>
+        <div class="container-fondo-modal" id="container-fondo-modal">
+                    <div class="tarjeta-modal" id="tarjeta-modal">
+                        <div class="container-modal-hijo-grande">
+                            <div class="container-img-texto">
+                                <div class="container-img">
+                                    <img src="" alt="" id="img-producto" class="img-producto-modal">
+                                </div>
+                                <h4 class="title-producto" id="nombre-producto-modal"></h4>
+                                <p class="descripcion-producto" id="Dimensiones-producto">Dimensiones: </p>
+                                <p class="descripcion-categoria" id="descripcion-categoria-modal">Categoria: </p>
+                            </div>
+                           
+                            <div class="container-derecha-codigo">
+                                <p class="numero-codigo" id="codigo-modal-producto">Codigo: </p>
+                                <div class="container-input-precio">
+                                    <div class="container-input-cantidad">
+                                        <label for="">CANT.</label>
+                                        <input type="number" class="btn-numero-input" id="boton-cantidad-input">
+                                    </div>
+                                    <p class="precio" id="precio-modal-producto">Precio: </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-boton-largo-agregar">
+                            <button class="btn-largo-agregar" id="button-largo-agregar">Cerrar</button>
+                            <button class="btn-largo-cerrar" id="button-largo-cerrar">Agregar</button>
+
+                        </div>
+                    </div>
+            </div>
+
+          <div id="ventanaEmergente-carrito" class="ventana-emergente-carrito" style="display: none;"></div> 
+   <script src="script.js"></script>
+    <script  src="./script-cariito.js"></script>
+
+</body>    
+</div>
+    
+
+</html>

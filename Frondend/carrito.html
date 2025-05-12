@@ -1,0 +1,72 @@
+
+    <main class="ventana-emergente-carrito" id="ventana-emergente-carrito" >
+        <section class="ventana-emergente-carrito-seccionada" id="ventana-emergente-c">
+            <div class="seccion-superior-idFactura">
+                <div class="factura-id"> <span>ID factura</span> <span>#fac001</span> </div>
+
+                <div class="cierre-carrito">
+                    <span id="cerrar-btn" >Cerrar</span>
+                </div>
+            </div>
+            <div class="seccion-media-cliente">
+                <div class="botones-clientes">
+                    <span>Datos del cliente</span>
+                    <button>Crear nuevo</button>
+                    <button id="clientes-existen" onclick="verUsuarios()">Existente</button>
+                    <div id="cliente-lista" class="cliente-lista">
+                        <ul class="ul-lista-clientes">
+                            <li class="li-lista-clientes">
+                                <!-- <div class="cliente-lista-nombre">
+                                    <span>Nombre: </span><spam></spam>
+                                    <span>RNC/Cedula: </span><spam></spam>
+                                    <span>Numero tel: </span><span></span>
+                                    <span>Direccion: </span><span></span>
+                                </div> -->
+                            </li>
+
+                    </div>
+                </div>
+                <div class="datos-cliente">
+                   <div> <label for="">Nombre:</label><span></span></div>
+                   <div> <label for="">RNC/Cedula:</label><span></span></div>
+                   <div> <label for="">Numero tel:</label><span></span></div>
+                   <div> <label for="">Direccion:</label><span></span></div>
+
+                </div>
+            </div>
+            <div class="seccion-baja-detalles-car">
+                <div class="header-carrito-nombre">
+                    <h2>Resumen</h2>
+                    <label for="">07-05-2025</label>
+                </div>
+                <div class="main-cuerpo-carrito">
+                    <div class="top-cuerpo-carrito">
+                        <label for="">Producto</label>
+                        <label for="">Precio</label>
+                    </div>
+                    <div class="lista-carrito">
+                        <ul class="ul-lista-carrito" id="main-lista-carrito">
+                           
+
+                            
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="total-carrito">
+                    <div class="total-carrito-impustp-itbs">
+                        <div class="totales-carrito"><label for="">total</label> <label for="" id="total-1">$0.00 DOP</label></div>
+                        <div class="totales-carrito"><label for="">itbs</label> <label for="" id="itbs-total">$0.00 DOP</label></div>
+                        <div class="totales-carrito"><label for="">Envio y seguro</label> <label for="" id="envio-total">$0.00 DOP</label></div>
+                        <div class="totales-carrito"><label for="">Total final </label> <label for="" id="total-final">$0.00 DOP</label></div>
+                    </div>
+                    <div class="boton-carrito-pago">
+                        <button onclick="pagarCarrito()">PAGADO</button>
+                        <button onclick="mostrarProductos()">Formato de pago | cash </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>

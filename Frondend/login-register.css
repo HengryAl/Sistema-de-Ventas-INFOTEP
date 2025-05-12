@@ -1,0 +1,117 @@
+ 
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+    font-size: larger;
+    background-color:white ;
+}
+
+.form-contenedor{
+    position: relative;
+    left: 450px;
+    width: 400px;
+    background-color:#E2E2E2;
+    border-radius: 10px;
+    padding: 80px;
+    bottom: 5px;
+  
+}
+
+.form-contenedor-2{
+    position: relative;
+    left: 450px;
+    height: 550px;
+    width: 400px;
+    background-color:#E2E2E2;
+    border-radius: 10px;
+    padding: 80px;
+    bottom: 5px;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+h1{
+    color:#E90077;
+    text-align: center;
+}
+
+p{
+    position: relative;
+    left: 60px;
+    bottom: 15px;
+    color: #E90077;
+    font-size: 25px;
+}
+
+
+
+
+input{
+    position: relative;
+    left: 50px;
+    height: 45px;
+    width: 300px;
+    border-radius: 20px;
+    border: unset;
+    font-size: larger;
+    bottom: 50px;
+    padding-left: 15px;
+
+}
+
+
+button{
+    position: relative;
+    left: 100px;
+    bottom: 30px;
+    height: 45px;
+    width: 200px;
+    border-radius: 50px;
+    border: unset;
+    font-size: larger;
+    
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+button{
+    background-color: #E90077;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error{
+    color: white;
+  
+}
+
+.escondido{
+    display: none;
+}
+
+.correo{
+    position: relative;
+    bottom: 50px;
+}
